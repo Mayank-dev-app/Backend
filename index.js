@@ -7,9 +7,9 @@ const app = express();
 
 
 const corsOption = {
-   origin: ["http://localhost:5173", "https://frontend-red-tau-56.vercel.app/" ],
+   origin: ["http://localhost:5173", "https://frontend-red-tau-56.vercel.app" ],
    method: ["GET", "POST"],
-   Credential: true,
+   credentials: true,
 };
 
 app.use(cors(corsOption));
